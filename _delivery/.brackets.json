@@ -1,0 +1,12 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/g/Projeto Hades/content/telas/03/Tela.js",
+        "C:/g/Projeto Hades/content/telas/04/libs/createjs-2015.11.26.min.js",
+        "C:/g/Projeto Hades/content/telas/04/Tela.js",
+        "C:/g/Projeto Hades/content/modeloa.js",
+        "C:/g/Projeto Hades/content/_templates/Exercicio multipla escolha.js",
+        "C:/g/Projeto Hades/content/telas/05/Tela.js",
+        "C:/g/Projeto Hades/content/telas/10/Tela.js",
+        "FileSaver.js"
+    ]
+}
