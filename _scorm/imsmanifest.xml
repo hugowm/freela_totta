@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-42A9561A-9D85-D534-8CB6-640256BAEB7A" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="SGOP_COURSE">
+    <organization identifier="SGOP_COURSE" structure="hierarchical">
+    <title><![CDATA[Introdução]]></title>
+      <item identifier="SGOP_MOD1" identifierref="SGOP_MOD1_PACK" isvisible="true">
+        <title><![CDATA[Modulo 1]]></title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="SGOP_MOD1_PACK" type="webcontent" adlcp:scormtype="sco" href="content/index.html">
+      <file href="content/index.htm" />
+    </resource>
+  </resources>
+</manifest>

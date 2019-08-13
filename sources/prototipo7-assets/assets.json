@@ -1,0 +1,30 @@
+{
+"frames": {
+	"bt_pdf.png": {
+		"frame": {"x":0, "y":596, "w":518, "h":60},
+		"spriteSourceSize": {"x":674,"y":334,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"bt_pdf2.png": {
+		"frame": {"x":0, "y":596, "w":518, "h":60},
+		"spriteSourceSize": {"x":674,"y":334,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_00.png": {
+		"frame": {"x":0, "y":657, "w":507, "h":89},
+		"spriteSourceSize": {"x":672,"y":214,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_01.png": {
+		"frame": {"x":0, "y":0, "w":651, "h":595},
+		"spriteSourceSize": {"x":114,"y":173,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	}
+
+},
+"meta": {
+	"image": "assets.png",
+	"size": {"w": 652, "h": 747},
+	"scale": "1"
+}
+}

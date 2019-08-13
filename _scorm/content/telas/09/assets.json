@@ -1,0 +1,70 @@
+{
+"frames": {
+	"btConfirm.png": {
+		"frame": {"x":1367, "y":0, "w":210, "h":52},
+		"spriteSourceSize": {"x":574,"y":673,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"btConfirm2.png": {
+		"frame": {"x":1367, "y":0, "w":210, "h":52},
+		"spriteSourceSize": {"x":574,"y":673,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"feed1.png": {
+		"frame": {"x":0, "y":0, "w":1366, "h":768},
+		"spriteSourceSize": {"x":0,"y":0,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"feed2.png": {
+		"frame": {"x":0, "y":769, "w":1366, "h":768},
+		"spriteSourceSize": {"x":0,"y":0,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_00.png": {
+		"frame": {"x":1007, "y":1694, "w":694, "h":50},
+		"spriteSourceSize": {"x":338,"y":128,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_01.png": {
+		"frame": {"x":0, "y":1538, "w":1006, "h":462},
+		"spriteSourceSize": {"x":180,"y":236,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_02.png": {
+		"frame": {"x":1007, "y":1745, "w":484, "h":41},
+		"spriteSourceSize": {"x":442,"y":222,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_03.png": {
+		"frame": {"x":1007, "y":1538, "w":898, "h":155},
+		"spriteSourceSize": {"x":235,"y":234,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"opc1_cr.png": {
+		"frame": {"x":1007, "y":1787, "w":415, "h":99},
+		"spriteSourceSize": {"x":244,"y":429,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"opc2.png": {
+		"frame": {"x":1007, "y":1887, "w":415, "h":99},
+		"spriteSourceSize": {"x":243,"y":543,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"opc3.png": {
+		"frame": {"x":1007, "y":1887, "w":415, "h":99},
+		"spriteSourceSize": {"x":708,"y":543,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"opc4.png": {
+		"frame": {"x":1007, "y":1887, "w":415, "h":99},
+		"spriteSourceSize": {"x":708,"y":429,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	}
+
+},
+"meta": {
+	"image": "assets.png",
+	"size": {"w": 1906, "h": 2001},
+	"scale": "1"
+}
+}

@@ -1,0 +1,5 @@
+* {margin: 0; padding: 0}
+body {text-align: center; background: #282828;}
+canvas {margin: 0 auto; width: 100%; max-width: 988px;}
+#adobeAnimate {position: absolute; margin: 60px auto 0; width: 100%; max-width: 988px; display: none;}
+#config {position: absolute; display: none; width: 500px; margin: 90px 0 0 -250px; left: 50%; height: 350px}

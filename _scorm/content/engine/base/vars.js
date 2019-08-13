@@ -1,0 +1,1 @@
+var Main, SPRITES = new Sprites(), STAGE = new PIXI.Container(), lastPage = 0, ObjTeAt, currentPage = 0, RENDERER = new PIXI.autoDetectRenderer(CONFIG.screen.width, CONFIG.screen.height), Sprites, TOUP = [], DATA_CURSO, canvas, stage, exportRoot;

@@ -1,0 +1,25 @@
+{
+"frames": {
+	"img_00.png": {
+		"frame": {"x":0, "y":232, "w":194, "h":194},
+		"spriteSourceSize": {"x":217,"y":246,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_01.png": {
+		"frame": {"x":0, "y":84, "w":676, "h":147},
+		"spriteSourceSize": {"x":476,"y":268,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"img_02.png": {
+		"frame": {"x":0, "y":0, "w":936, "h":83},
+		"spriteSourceSize": {"x":218,"y":485,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	}
+
+},
+"meta": {
+	"image": "assets.png",
+	"size": {"w": 937, "h": 427},
+	"scale": "1"
+}
+}
