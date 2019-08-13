@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+        <meta charset="utf-8"/>
+		<title>Doc Hades</title>
+        <script src="../engine/plugins/jquery-min-191.js"></script>
+        <style>
+            * {margin: 0; padding: 0; font-family: 'calibri'}    
+            .intr , .item {margin: 30px;}
+            h1 {text-align: center; width: 100%; text-transform: uppercase; margin-top: 20px}
+            .content {display: none; margin: 0 30px}
+            h2 {cursor: pointer}
+            li div {margin-left: 20px; color: #666}
+            li {margin-top: 10px}
+        </style>
+	</head>
+	<body>
+        <h1>Documentação Hades</h1>
+        <div class="intr">
+            <h2>Destaques</h2>
+            <div style="margin:0 30px">
+                &bull; Programada totalmente com javascript;<br />
+                &bull; Templates de tela editaveis sem a necessidade de programador;<br />
+                &bull; Integrado ao adobe animate;<br />
+                &bull; Edição de layout sem a necessidade de programador;<br />
+                &bull; Funciona em desktop, tablet e smartphone;<br />
+            </div>
+        </div>
+        <br style="clear:both" />
+        <div class="item">
+            <h2 class="shoe">Entendendo o ShoeBox</h2>
+            <div class="content shoe">
+                ShoeBox é um programinha gratuito que reúne varias imagens em uma só.<br />
+                Baixa-lo é importante, pois ele é necessário para editar o layout da index, e para se gerar telas a partir do photoshop.<br />
+                Link de download: LINK SHOEBOX
+                <br /><br />
+                Usar o ShoeBox é bem simples, basta selecionar todas as imagens que vão compor o spritesheet, e arrasta-las para o ShoeBox na opção "Sprite Sheet" (imagem 1);<br />
+                <img src="imgs/imagem1.png"><br />
+                Após carregar as imagens, o programa exibira a imagem gerada (imagem 2), clique em "Settings" <b>(apenas na primeira vez)</b>. Nas configurações, selecione o template pixi.js, e troque o File Name para assets.json (imagem 3);<br />
+                Clique em Apply e depois Save. O ShoeBox irá gerar 2 arquivos "assets.png" e "assets.json", são eles que usaremos no curso.<br />
+                <img src="imgs/imagem2.png" style="float:left" />
+                <img src="imgs/imagem3.png" />
+                
+            </div>
+        </div>
+                <br style="clear:both" />
+        <div class="item">
+            <h2 class="lay">Configurando o layout</h2>
+            <div class="content lay">
+                <h3>parte 1</h3>
+                Para trocar qualquer elemento da API (index), vá até a pasta <b>content/assets/assets</b> e substitua o arquivo que desejar.<br />
+                Após a substituição, passe TODAS as imagens da pasta pelo ShoeBox, e salve os dois arquivos gerados pelo programa na pasta <b>content/assets</b> substituindo o que já estiver na pasta.
+                <br />                <br />
+
+                <h3>parte 2</h3>
+                abra o curso, segure as teclas <b>C+N+F+G</b>, a tela de configuração irá se abrir, arraste os botões para onde desejar, ou desative-os (clicando sobre eles), também é possivel alterar a barra de progresso clicando sobre ela.<br />
+                Após a edição, clique no botão pulsante, o sistema ira gerar um arquivo e fazer o download dele, salve esse arquivo na pasta <b>content/engine/config</b> arquivo <b>config.js</b>. Após isso, atualize o curso.
+            </div>
+        </div>
+                <br style="clear:both" />
+        <div class="item">
+            <h2 class="data">Configurando as telas</h2>
+            <div class="content data">
+                Todas as telas devem ser colocadas na pasta <b>content/telas/'pastaDaTela'</b>.<br />
+                O arquivo da configuração das telas do curso esta na pasta <b>content/engine/core</b> arquivo <b>DATA_CURSO.js</b><br />
+                A estrutura do arquivo deve se manter como esta, podendo adicionar ou remover telas, modulos e lições. O arquivo é auto-explicativo.<br /><br />
+                <b>IMPORTANTE, NÃO SE ESQUEÇA DE ESPECIFICAR QUANDO A TELA FOI FEITA NO ANIMATE, COMO NA IMAGEM 4</b><br /><br />
+                <img src="imgs/imagem4.png" />
+            </div>
+        </div>
+                <br style="clear:both" />
+        <div class="item">
+            <h2 class="debug">Debug</h2>
+            <div class="content debug">
+                Para ativar o debug, segure as teclas <b>D+B+U+G</b>. Após isso as telas estarão desbloqueadas.
+            </div>
+        </div>
+                <br style="clear:both" />
+        <div class="item">
+            <h2 class="ps">Gerando telas no photoshop</h2>
+            <div class="content ps">
+                Na pasta <b>content/_templates</b> estão os templates prontos para transformar os arquivos exportados do photoshop em telas prontas (até o momento tem apenas 1, preciso dos scripts das telas hehe).<br />
+                Nos arquivos de templates já tem as instruções de quais elementos são obrigatórios, e quais elementos podem ser inseridos. <br /><br />
+                Entenda como gerar esses elementos:<br />
+                &bull; no psd da tela, ative a opção <b>Recurso de imagem</b> (arquivo > gerar > Recurso de imagem); <br />
+                &bull; renomeie as camadas e/ou pastas de acordo com o nome do elemento (com o a extenção .png)<br />
+                &bull; ative a mascara em cada uma das camadas (imagem 5)<br />
+                &bull; salve o arquivo<br />
+                &bull; o photoshop irá salvar todas as camadas em arquivos pngs separados, pegue os arquivos, passe pelo ShoeBox, e coloque os arquivos gerados pelo ShoeBox + uma cópia do arquivo de template na pasta da tela<br /><br />
+                <img src="imgs/imagem5.png" />
+            </div>
+        </div>
+                <br style="clear:both" />
+        <div class="item">
+            <h2 class="animate">Gerando telas no animate</h2>
+            <div class="content animate">
+                Exporte o arquivo do animate sempre com o nome de Tela (o animate vai gerar Tela.html, Tela.js e pode ter ou não uma pasta "imagens") (sempre com T maiusculo).<br />
+                Não se esqueça de setar no arquivo DATA_CURSO.js que a tela é feita em animate.
+            </div>
+        </div>
+                <br style="clear:both" />
+        <div class="item">
+            <h2 class="cod">Metodos que podem ser chamados no animate</h2>
+            <div class="content cod">
+                <ul>
+                    <li>
+                        Main.API.changePage(NUM);
+                        <div>Muda a tela do curso para a tela informada (NUM)</div>
+                    </li>
+                    <li>
+                        Main.API.enableNext();
+                        <div>Libera botão avançar do curso</div>
+                    </li>
+                    <li>
+                        Main.API.enableNext();
+                        <div>Libera botão avançar do curso</div>
+                    </li>
+                    <li>
+                        Main.API.menu.open();
+                        <div>Abre o menu do curso</div>
+                    </li>
+                    <li>
+                        Main.API.menu.close();
+                        <div>Fecha o menu do curso</div>
+                    </li>
+                </ul><br />
+                
+                
+                <i>(Se houver necessidade de mais funções disponiveis, é só falar)</i>
+                <br /><br />
+                
+                <b>Botões da API:</b><br />
+                &nbsp; Main.API.btnMenu;<br />
+                &nbsp; Main.API.btnHelp;<br />
+                &nbsp; Main.API.btnFechar;<br />
+                &nbsp; Main.API.btnAudio;<br />
+                &nbsp; Main.API.btnNext;<br />
+                &nbsp; Main.API.btnPrev;<br />
+                <br />
+                <b>Escondendo o botão:</b><br />
+                botao.visible = false; (ou true para mostrar);
+                <br /><br />
+                <i>                ex: Main.API.btnNext.visible = false</i>
+                
+            </div>
+        </div>
+    </body>
+    <script>
+        window.onload = function(){
+            $('h2').click(function(){
+                $('div.'+$(this).attr('class')).fadeToggle();
+            })
+        }
+    </script>
+</html>
