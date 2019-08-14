@@ -11,6 +11,7 @@ function Telas(){
     this.bts = {};
     this.audios = {};
     this.all_els = [];
+    this.video = '';
     this.opened = false;
 }
 Telas.prototype = Object.create(Base.prototype);
@@ -56,6 +57,14 @@ Telas.prototype.loadPage = function(){
                 var im = new Img(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
                 self.feed1.addChild(im);
             }
+
+            if(element.indexOf('video') != -1){
+                console.log(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
+                //self.video = new Video({x: 200, y: 400});
+                //var im = new Img(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
+                //self.feed1.addChild(im);
+            }
+
             if(element.indexOf('feed2') != -1){
                 self.feed2 = new Popup({x: sprite.spriteSourceSize.x + (sprite.frame.w - 55),y: (sprite.spriteSourceSize.y + 18) - Main.API.CTELA.y});
                 var im = new Img(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
