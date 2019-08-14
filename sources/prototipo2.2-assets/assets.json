@@ -5,14 +5,14 @@
 		"spriteSourceSize": {"x":447,"y":146,"w":1366,"h":768},
 		"sourceSize": {"w":1366,"h":768}
 	},
-	"img_01.png": {
-		"frame": {"x":0, "y":0, "w":937, "h":616},
-		"spriteSourceSize": {"x":215,"y":152,"w":1366,"h":768},
-		"sourceSize": {"w":1366,"h":768}
-	},
 	"img_02.png": {
 		"frame": {"x":0, "y":617, "w":636, "h":67},
 		"spriteSourceSize": {"x":362,"y":137,"w":1366,"h":768},
+		"sourceSize": {"w":1366,"h":768}
+	},
+	"video_video1.png": {
+		"frame": {"x":0, "y":0, "w":937, "h":616},
+		"spriteSourceSize": {"x":215,"y":152,"w":1366,"h":768},
 		"sourceSize": {"w":1366,"h":768}
 	}
 
