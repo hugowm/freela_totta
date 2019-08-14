@@ -5,7 +5,7 @@
 		"spriteSourceSize": {"x":424,"y":162,"w":1366,"h":768},
 		"sourceSize": {"w":1366,"h":768}
 	},
-	"img_01.png": {
+	"video_video1.png": {
 		"frame": {"x":0, "y":0, "w":937, "h":616},
 		"spriteSourceSize": {"x":215,"y":152,"w":1366,"h":768},
 		"sourceSize": {"w":1366,"h":768}

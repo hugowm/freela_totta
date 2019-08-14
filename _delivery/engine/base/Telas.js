@@ -11,7 +11,7 @@ function Telas(){
     this.bts = {};
     this.audios = {};
     this.all_els = [];
-    this.video = '';
+    this.video = null;
     this.opened = false;
 }
 Telas.prototype = Object.create(Base.prototype);
@@ -59,10 +59,8 @@ Telas.prototype.loadPage = function(){
             }
 
             if(element.indexOf('video') != -1){
-                console.log(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
-                //self.video = new Video({x: 200, y: 400});
-                //var im = new Img(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
-                //self.feed1.addChild(im);
+                //self.video = new Video(el, sprite.spriteSourceSize.x + (sprite.frame.w/2), (sprite.spriteSourceSize.y + (sprite.frame.h/2)) - Main.API.CTELA.y);
+                self.video = new Video(el, sprite.spriteSourceSize.x, sprite.spriteSourceSize.y, sprite.frame.w, sprite.frame.h-100);
             }
 
             if(element.indexOf('feed2') != -1){
@@ -86,6 +84,11 @@ Telas.prototype.loadPage = function(){
                 self.opcs[self.opcs.length-1].id = self.opcs.length-1;
             }
         }
+
+        if(self.video != null){
+            self.camadas[2].addChild(self.video);
+        }
+
         if(self.clicks.length > 0){
             for(var i = 0; i < self.clicks.length; i++){
                 self.addChild(self.clicks[i]);
