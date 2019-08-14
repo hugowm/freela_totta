@@ -181,6 +181,11 @@ hAPI.prototype.changePage = function(page){
     }
 
     this.audioPlayer.stop();
+    if(this.telas[c] !== undefined){
+        if(this.telas[c].video !== null){
+            this.telas[c].video.stop();
+        }
+    }
 
     if(stage){
         stage.enableDOMEvents(false);

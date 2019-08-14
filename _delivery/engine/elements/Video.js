@@ -2,6 +2,11 @@ function Video(file, x, y, w, h){
     Base.call(this);
     this.paused = false;
 
+    this.button = new PIXI.Sprite(SPRITES['play_video']);
+    this.button.x = (w/2) - (this.button.width/2);
+    this.button.y = y;
+    
+
     file = file.replace('video_','').replace('.png', '.mp4');
     this.texture = PIXI.Texture.fromVideo('videos/'+file);
     this.videoSprite = new PIXI.Sprite(this.texture);
@@ -14,13 +19,16 @@ function Video(file, x, y, w, h){
     });
     
     this.addChild(this.videoSprite);
+    this.addChild(this.button);
 
     this.onEvents();
     this.on('clicado',()=>{
         if(this.paused){
             this.texture.baseTexture.source.play();
+            this.button.visible = false;
         } else {
             this.texture.baseTexture.source.pause();
+            this.button.visible = true;
         }
         this.paused = !this.paused;
     });
@@ -33,3 +41,9 @@ function Video(file, x, y, w, h){
 
 Video.prototype = Object.create(Base.prototype);
 Video.prototype.constructor = Video;
+
+Video.prototype.stop = function(){
+    this.texture.baseTexture.source.pause();   
+    this.button.visible = true;
+    this.paused = true;
+}
